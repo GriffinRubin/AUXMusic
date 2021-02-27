@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script defer src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" ></script>
+    <script defer src="./Queue.js" ></script>
+    <link rel="stylesheet"  href="Styles.css">
+    <title>Listener Main Page</title>
+</head>
+<body>
+    <div id="app">
+        <p>DJ {{ djName }}</p>
+        <p>Now Playing: <song v-bind:title="queue[0][0]"
+                              v-bind:artist="queue[0][1]">
+                        </song>
+        </p>
+        <p>Up Next
+            <song v-show="queue.length > 1"
+                  v-for="song in queue" v-if="song!=queue[0]"
+                  v-bind:title="song[0]"
+                  v-bind:artist="song[1]">
+            </song>
+        </p>
+    </div>
+
+</body>
+</html>
