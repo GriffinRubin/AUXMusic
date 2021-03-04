@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="djreqstyle.css">
+        <title>Requests List</title>
+    </head>
+    <body>
+        <h1>These songs have been requested:</h1>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">🔍</button>
+              </form>
+          </div>
+        <br />
+        <table>
+        <thead>
+            <tr>
+              <th scope="col">Song Title</th>
+              <th scope="col">Requested By</th>
+              <th scope="col">Add?</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rhiannon<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
+              <td>Kanye West</td>
+              <td><button type="button">✓</button>
+                  <button type="button">🛇</button></td>
+              </tr>
+            <tr>
+                <td>The Chain<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
+                <td>Kanye West</td>
+                <td><button type="button">✓</button>
+                    <button type="button">🛇</button></td>
+            </tr>
+            <tr>
+                <td>Dreams<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
+                <td>Kanye West</td>
+                <td><button type="button">✓</button>
+                    <button type="button">🛇</button></td>
+        </tr>
+        </tbody>
+            </table>
+    </body>
+
+</html>
