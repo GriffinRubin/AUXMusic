@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="listenerstyle.css">
+        <title>Request a song!</title>
+    </head>
+    <body>
+        <h1>Request a song<i>!</i></h1>
+        <div class="go-to-requests">
+        <button type="button">CURRENT REQUESTS</button></div>
+        <br />
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">🔍</button>
+              </form>
+          </div>
+        <br />
+        <h2>Results:</h2>
+        <br />
+        <table>
+        <thead>
+            <tr>
+              <th scope="col">Song Title</th>
+              <th scope="col">Album</th>
+              <th scope="col">Length</th>
+              <th scope="col">Request?</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rhiannon<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
+              <td>Fleetwood Mac</td>
+              <td>4:10</td>
+              <td style="font-size:12px;color:#bbb;">REQUESTED</td>
+              </tr>
+            <tr>
+                <td>The Chain<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
+                <td>Rumours (Deluxe)</td>
+                <td>4:30</td>
+                <td><button type="button">✓</button></td>
+            </tr>
+            <tr>
+                <td>Dreams<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
+                <td>Rumours (Deluxe)</td>
+                <td>4:17</td>
+                <td><button type="button">✓</button></td>
+        </tr>
+        </tbody>
+            </table>
+    </body>
+
+</html>
