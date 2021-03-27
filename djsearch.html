@@ -2,52 +2,52 @@
 <html>
     <head>
         <link rel="stylesheet"  href="searchstyle.css">
-        <title>Add a song!</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <title>djsearch</title>
     </head>
-    <body>
-        <h1>Add a song<i>!</i></h1>
-        <div class="go-to-requests">
-        <button type="button">CURRENT QUEUE</button></div>
+    <body class = "back_grad">
+        <h1>
+          <img src = "sidebar button.PNG" id = "sidebarbutton"><img src = "White Logo.png" id = "logo">aux
+          <div id = "profile" type="text" name="profile">
+            <img id = "profpic" src = "profpic.jpg">
+            <span id = "username">AMY</span>
+          </div>
+        </h1>
+        <br />
         <br />
             <div class="search-container">
               <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">🔍</button>
+                <input type="image" src = "searchbutton.PNG" id = "searchbutton">
+                <input class = "oval" type="text" placeholder="Search.." name="search">
               </form>
-          </div>
-        <br />
-        <h2>Results:</h2>
-        <br />
-        <table>
-        <thead>
-            <tr>
-              <th scope="col">Song Title</th>
-              <th scope="col">Album</th>
-              <th scope="col">Length</th>
-              <th scope="col">Add?</th>
-              </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Rhiannon<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
-              <td>Fleetwood Mac</td>
-              <td>4:10</td>
-              <td><button type="button">+</button></td>
-              </tr>
-            <tr>
-                <td>The Chain<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
-                <td>Rumours (Deluxe)</td>
-                <td>4:30</td>
-                <td><button type="button">+</button></td>
-            </tr>
-            <tr>
-                <td>Dreams<br /><p style="font-size:14px;line-height:0px;";>Fleetwood Mac</p></td>
-                <td>Rumours (Deluxe)</td>
-                <td>4:17</td>
-                <td><button type="button">+</button></td>
-        </tr>
-        </tbody>
-            </table>
-    </body>
-
+            </div>
+          <br />    
+        <ol>
+          <li>
+            <div class = "songcontainer">
+              <img src = "albumart.jpg" class = "albumart">
+              <span class = "songtitle">Beautiful Trip</span>
+              <button class = "addbutton" type="button">+</button>
+              <div class = "artist">Kid Cudi</div>
+            </div>
+          </li>
+          <li>
+            <div class = "songcontainer">
+              <img src = "albumart.jpg" class = "albumart">
+              <span class = "songtitle">Beautiful Trip</span>
+              <button class = "addbutton" type="button">+</button>
+              <div class = "artist">Kid Cudi</div>
+            </div>
+          </li>
+          <li>
+            <div class = "songcontainer">
+              <img src = "albumart.jpg" class = "albumart">
+              <span class = "songtitle">Beautiful Trip</span>
+              <button class = "addbutton" type="button">+</button>
+              <div class = "artist">Kid Cudi</div>
+            </div>
+          </li>
+        </ol>
+      </body>
 </html>

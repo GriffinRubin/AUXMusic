@@ -1,54 +1,207 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif;
+}
 body {
-    font-family: Arial;
+    height: 99%;
+    width: 100%;
+    margin: 0 0 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
+    height: 1%;
+    width: 100%;
     font-style: bold;
-    color: #587AD8;
+    color: #d1d1d1;
+    margin-top: 8px;
   }
 
-h2 {
-    font-size: 18px;
-    font-style: normal;
-    margin-top: 30px;
-    color: #303030;
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 4%;
+  color: #587ad8;
 }
 
-.go-to-requests {
+.clearbutton{
+  font-size: 60%;
+  font-style: normal;
+  float: right;
+  width: 90px;
+  height: 30px;
+  border-radius: 35px;
+  background: #272727;
+  color: #a7a7a7;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.cleartext{
+  color: #a7a7a7;
+  margin-top: 5px;
+  margin-left: 20%;
+  float:left;
+}
+
+#profile{
+  float: right;
+  width: 90px;
+  height: 30px;
+  border-radius: 35px;
+  background: #272727;
+  cursor: pointer;
+}
+
+#profpic{
+  margin-top: 3px;
+  margin-left: 3px;
+  height:75%;
+  width:27px;
+  float:left;
+  border-radius: 50%;
+}
+
+#username{
+  float: right;
+  font-style: normal;
+  font-size: 50%;
+  margin-top: 5px;
+  margin-right: 20%;
+  color: #a7a7a7;
+}
+
+#logo {
+  height: 20px;
+  width: 25px;
+  margin-right: 12px;
+  margin-left: 35px;
+}
+
+#searchbutton{
+  position: relative;
+  top: 5px;
+  left: 32px;
+  height: 20px;
+  width: 20px;
+}
+
+#sidebarbutton{
   margin-left: 20px;
+  margin-bottom: 2px;
+  cursor: pointer;
 }
 
 .search-container {
     float: left;
-    margin-top: 0px;
-  }
-
-  table {
-    position: static;
-    width: 70%;
-    margin-top: -15px;
-  }
-  
-  thead th {
-    border-bottom: 1px solid #587AD8;
-    color: #303030;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  tr {
-    border-bottom: 1px solid #FFF;
-    margin-bottom: 5px;
-  }
-
-  tr:hover {
-      background-color: #f5f5f5;
+    margin-left: 2%;
     }
-  
-  th, td {
-    font-size: 16px;
-    padding: 10px;
-    text-align: left;
-    width: 30%;
+
+.back_grad{
+    background: linear-gradient(#303030,
+     #313132 55%, #353a46 80%, #3a58a8);
   }
+
+.oval {
+    width: 160px;
+    height: 20px;
+    background: #272727;
+    border-radius: 35px;
+    padding-left: 35px;
+    color: #d1d1d1;
+}
+ol{
+  margin-left:2%;
+  counter-reset: item;
+  padding-left: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  list-style-type: none;
+  color: #d1d1d1;
+  float: center;
+}
+
+li{
+  display: flex;
+  height: 50px;
+  width: 90%;
+  border-bottom: 1px solid #a7a7a7
+}
+
+li:before{
+  content: counter(item)" ";
+  counter-increment: item;
+  margin-top: 15px;
+}
+
+.songcontainer{
+  height: 60px;
+  width: 100%;
+  display: inline-block;
+}
+
+.albumart{
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+  float:left;
+}
+
+.songtitle{
+  font-size: 10px;
+  color: #d1d1d1;
+  padding-left: 15px;
+}
+
+.artist{
+  font-size: 10px;
+  color: #a7a7a7;
+  padding-left: 65px;
+}
+
+.addbutton{
+  float: right;
+  background-color: #587ad8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.acceptbutton{
+  float: right;
+  background-color: #587ad8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 35px;
+}
+
+.denybutton{
+  float: right;
+  background-color: #212121;
+  color: #d1d1d1;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 35px;
+}
+
+.requestbutton{
+  float: right;
+  font-size: 12px;
+  background-color: #587ad8;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 80px;
+  height: 25px;
+}
