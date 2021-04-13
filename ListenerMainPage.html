@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="listenermainstyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <title>You're listening to...</title>
+</head>
+
+<body class="back_grad">
+
+  <!-- sidebar code -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <img src="C:\Users\azhan\Desktop\Senior Project Design\White Logo.png" id="logosidebar">
+    <span id="welcometext">Welcome, Amy</span>
+    <h4>MENU</h4>
+    <a href="#">Home</a>
+    <a href="#">Recent</a>
+    <a href="#">Library</a>
+    <h4>SESSIONS</h4>
+    <a href="#">Join Session</a>
+    <a href="#">Start Session</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()"><img src="C:\Users\azhan\Desktop\Senior Project Design\sidebar-icon.png"
+        id="sidebarbutton"></button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+  <!-- logo + name header -->
+  <h1>
+    <div id="header" name="header">
+      <img src="C:\Users\azhan\Desktop\Senior Project Design\White Logo.png" id="logo">
+      aux
+    </div>
+  </h1>
+
+  <!-- profile dropdown menu section-->
+  <div id="profiledropdown" name="profiledropdown">
+    
+    <button onclick="myFunction()" class="dropbtn"><img src="C:\Users\azhan\Desktop\Senior Project Design\pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#">Log Out</a>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+    
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </div>
+
+  <!-- dj session section -->
+
+  <div id="djsession" name="djsession">
+    <h2 style="margin-left: 45px;">You're listening to:</h2>
+    <img src="C:\Users\azhan\Desktop\Senior Project Design\dj-pfp.jpg" id="djpfp">
+    <h3 id="sessionname">Kanye's Session</h3>
+    <button class="invitebutton" type="button"><span id="buttontext">invite others</span></button>
+    <button class="leavebutton" type="button"><span id="buttontext">leave session</span></button>
+  </div>
+
+  <!-- music/queue section -->
+
+  <div id="queuebox" name="queuebox">
+    <span id="queuesubtitle">now playing:</span>
+  </div>
+
+</body>
+
+</html>
