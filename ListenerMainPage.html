@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="mainpagestyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="Logo.png"/>
+  <title>You're listening to...</title>
+</head>
+
+<body>
+
+    <!-- sidebar code -->
+    <div id="sidebar" class="sidebar">
+      <div id="sidebar-header" class="sidebar-header">
+     <img src="White Logo.png" id="logosidebar">
+     <span id="welcometext">Welcome, Amy</span>
+      </div>
+     <h4>MENU</h4>
+     <a href="#">Home</a>
+     <a href="#">Recent</a>
+     <a href="#">Library</a>
+     <h4>SESSIONS</h4>
+     <a href="#"><img src="join-session.png" id="joinicon">Join Session</a>
+     <a href="#"><img src="start-session.png" id="starticon">Start Session</a>
+     <button class="openbtn"><img src="sidebar-icon.png" id="sidebaricon"></button>   
+   </div> 
+
+  <script>
+    $('.openbtn').click(function(){
+      $('.sidebar').toggleClass('active');
+    });
+  </script> 
+
+ <div id="main">
+  <!-- logo + name header -->
+  <h1>
+    <div id="header" name="header">
+      <img src="White Logo.png" id="logo">
+      aux
+      <!-- profile dropdown menu section-->
+  <div id="profiledropdown" name="profiledropdown">
+    
+    <button onclick="myFunction()" class="dropbtn"><img src="pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#">Log Out</a>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+    
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </div>
+    </div>
+  </h1> 
+</div>
+</div>
+
+  <!-- dj session section -->
+
+  <div id="djsession" name="djsession">
+    <h2 style="margin-left: 105px;">You're listening to:</h2>
+    <img src="dj-pfp.jpg" id="djpfp">
+    <h3 id="sessionname">Kanye's Session</h3>
+  </div>
+  <br />
+  <div id="sessionbuttons" name="sessionbuttons">
+    <button class="sessionbutton" type="button"><span id="buttontext">invite others</span></button>
+    <button class="sessionbutton" type="button"><span id="buttontext">leave session</span></button>
+  </div>
+
+  <!-- music/queue section -->
+
+  <div id="queuebox" name="queuebox">
+    <p id="queuesubtitle">now playing:</p>
+    <br />
+    <img src="album-cover.jpg" id="albumcover">
+    <div id="currentsong">
+      <span style="color: #ddd; font-weight: medium;">telepatía</span><br />Kali Uchis<br />Sin Miedo (del Amor y Otros Demonios)
+    </div>
+    <div id="audioprogress">
+      <div></div>
+    </div>
+    <div id="audiotime">
+      <span id="timestart">2:00</span> 
+      <span id="timeend">2:40</span>
+    </div>
+
+    <!--- queue table -->
+
+    <div id="currentqueue">
+      <p id="queuesubtitle">current queue:</p>
+      <button class="requestbutton" type="button"><span id="buttontext" style="color:#fff;">request a song</span></button>
+      <div id="queuelistbox">
+      <ol id="queuelist">
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+    </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
