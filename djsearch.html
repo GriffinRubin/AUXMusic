@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="searchstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="shortcut icon" type="image/jpg" href="Logo.png"/>
+        <title>(DJ) Search for a song</title>
+    </head>
+    <body>
+ <!-- sidebar code -->
+ <div id="sidebar" class="sidebar">
+  <div id="sidebar-header" class="sidebar-header">
+ <img src="White Logo.png" id="logosidebar">
+ <span id="welcometext">Welcome, Amy</span>
+  </div>
+ <h4>MENU</h4>
+ <a href="#">Home</a>
+ <a href="#">Recent</a>
+ <a href="#">Library</a>
+ <h4>SESSIONS</h4>
+ <a href="#"><img src="join-session.png" id="joinicon">Join Session</a>
+ <a href="#"><img src="start-session.png" id="starticon">Start Session</a>
+ <button class="openbtn"><img src="sidebar-icon.png" id="sidebaricon"></button>   
+</div> 
+
+<script>
+$('.openbtn').click(function(){
+  $('.sidebar').toggleClass('active');
+});
+</script> 
+
+<div id="main">
+<!-- logo + name header -->
+<h1>
+<div id="header" name="header">
+  <img src="White Logo.png" id="logo">
+  aux
+  <!-- profile dropdown menu section-->
+<div id="profiledropdown" name="profiledropdown">
+
+<button onclick="myFunction()" class="dropbtn"><img src="pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
+<div id="myDropdown" class="dropdown-content">
+  <a href="#">Profile</a>
+  <a href="#">Settings</a>
+  <a href="#">Log Out</a>
+</div>
+
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+</div>
+</div>
+</h1> 
+</div>
+</div>
+
+        
+        <br />
+        <br />
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="image" src = "search-icon.PNG" id = "search-icon">
+            <input class = "search" type="text" placeholder="Search.." name="search">
+          </form>
+        </div>
+          <br />    
+        <ol>
+          <li>
+            <div class = "songcontainer">
+              <img src = "albumart.jpg" class = "albumart">
+              <span class = "songtitle">Beautiful Trip</span>
+              <button class = "addbutton" type="button">+</button>
+              <div class = "artist">Kid Cudi</div>
+            </div>
+          </li>
+          <li>
+            <div class = "songcontainer">
+              <img src = "albumart.jpg" class = "albumart">
+              <span class = "songtitle">Beautiful Trip</span>
+              <button class = "addbutton" type="button">+</button>
+              <div class = "artist">Kid Cudi</div>
+            </div>
+          </li>
+          <li>
+            <div class = "songcontainer">
+              <img src = "albumart.jpg" class = "albumart">
+              <span class = "songtitle">Beautiful Trip</span>
+              <button class = "addbutton" type="button">+</button>
+              <div class = "artist">Kid Cudi</div>
+            </div>
+          </li>
+        </ol>
+
+        <div id ="currentplaying">
+          <img src = "albumart.jpg" class = "currentalbum">
+          <div id="currentinfo">
+            <span class ="currentsong">Beautiful Trip</span>
+            <br />
+            <span class ="currentartist">Kid Cudi</span>
+        </div>
+        </div>
+      </body>
+</html>
