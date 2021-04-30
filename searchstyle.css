@@ -92,6 +92,7 @@ h3 {
   position: relative;
   top: 20px;
   left: 110px;
+  
 }
 
 #search-icon {
@@ -111,6 +112,7 @@ h3 {
     color: var(--lighttext);
     border: none;
     margin-left: 30px;
+   
 }
 
 ::placeholder {
@@ -122,12 +124,17 @@ h3 {
 }
 
 /* search list starts */
+
+
 ol {
   margin-left: 10%;
   counter-reset: item;
   list-style-type: none;
   color: #d1d1d1;
   width: 99%;
+  height: 1800px;
+  overflow: auto;
+  
 }
 
 li {
@@ -235,7 +242,7 @@ li:before{
   width: 121%;
   height: 240px;
   background-color: var(--bg);
-  margin-top: 137%;
+  margin-top: 12.5%;
   margin-left: -6px;
 }
 
@@ -243,7 +250,7 @@ li:before{
   width: 121%;
   height: 240px;
   background-color: var(--bg);
-  margin-top: 127%;
+  margin-top: 3%;
   margin-left: -6px;
 }
 
@@ -270,8 +277,9 @@ li:before{
 /* sidebar starts */
 h4 {
   color: #7A7A7A;
-  font-size: 40px;
+  font-size: 50px;
   position: relative;
+  letter-spacing: 1px;
   bottom: -20px;
   left: 100px;
 }
@@ -313,8 +321,8 @@ h4 {
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
 }
 
 .sidebar { 
@@ -399,8 +407,10 @@ h4 {
 
 #profiledropdown {
   float: right;
-  margin-top: -15px;
-  margin-right: 80px;
+  position: absolute;
+  top: -15px;
+  right: 80px;
+
 }
 
 #pfp {
@@ -423,6 +433,7 @@ h4 {
 }
 
 .dropbtn {
+  float: right;
   background-color: var(--dark);
   padding: 16px;
   font-size: 16px;
@@ -431,17 +442,12 @@ h4 {
   border-radius: 80px;
   border: none;
   cursor: pointer;
+  margin-top: 23px;
+  margin-right: 80px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: var(--dark);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  overflow: visible;
-  z-index: 99;
 }
 
 .dropdown-content {
@@ -451,9 +457,8 @@ h4 {
   min-width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   right: 0;
-  margin-top: 5px;
-  margin-right: -115px;
-  overflow: visible;
+  margin-top: 166px;
+  margin-right: -188px;
   z-index: 99;
 }
 
@@ -464,7 +469,7 @@ h4 {
   text-decoration: none;
   display: block;
   position: relative;
-  z-index: 0;
+  z-index: 99;
 }
 
 .dropdown-content a:hover {

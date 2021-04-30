@@ -38,40 +38,15 @@
        <img src="White Logo.png" id="logo">
        aux
        <!-- profile dropdown menu section-->
-     <div id="profiledropdown" name="profiledropdown">
-     
-     <button onclick="myFunction()" class="dropbtn"><img src="pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
-     <div id="myDropdown" class="dropdown-content">
-       <a href="#">Profile</a>
-       <a href="#">Settings</a>
-       <a href="#">Log Out</a>
-     </div>
-     
-     <script>
-       function myFunction() {
-         document.getElementById("myDropdown").classList.toggle("show");
-       }
-     
-       window.onclick = function(event) {
-         if (!event.target.matches('.dropbtn')) {
-           var dropdowns = document.getElementsByClassName("dropdown-content");
-           var i;
-           for (i = 0; i < dropdowns.length; i++) {
-             var openDropdown = dropdowns[i];
-             if (openDropdown.classList.contains('show')) {
-               openDropdown.classList.remove('show');
-             }
-           }
-         }
-       }
-       </script>
-     </div>
+       <button onclick="myFunction()" class="dropbtn"><img src="pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
+    
+
      </div>
      </h1> 
      </div>
      </div>
           
-        </h1>
+        
         <br />
         <br />
         
@@ -83,8 +58,39 @@
           </form>
         
         </div>
+
+        <div id="profiledropdown" name="profiledropdown">
+     
+     
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Log Out</a>
+          </div>
+          
+          <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+          
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+          </div>
+          
           <br />    
         <ol>
+          <div id="searchlistbox">
           <li>
             <div class = "songcontainer">
               <img src = "albumart.jpg" class = "albumart">
@@ -110,6 +116,8 @@
             </div>
           </li>
         </ol>
+
+      </div>
 
         <div id ="currentplaying">
           <img src = "albumart.jpg" class = "currentalbum">

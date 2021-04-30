@@ -37,35 +37,7 @@ $('.openbtn').click(function(){
 <div id="header" name="header">
   <img src="White Logo.png" id="logo">
   aux
-  <!-- profile dropdown menu section-->
-<div id="profiledropdown" name="profiledropdown">
-
-<button onclick="myFunction()" class="dropbtn"><img src="pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
-<div id="myDropdown" class="dropdown-content">
-  <a href="#">Profile</a>
-  <a href="#">Settings</a>
-  <a href="#">Log Out</a>
-</div>
-
-<script>
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  </script>
-</div>
+  <button onclick="myFunction()" class="dropbtn"><img src="pfp-ex.jpg" id="pfp"><span id="username">amy</span></button>
 </div>
 </h1> 
 </div>
@@ -80,6 +52,37 @@ $('.openbtn').click(function(){
             <input class = "search" type="text" placeholder="Search.." name="search">
           </form>
         </div>
+
+          <!-- profile dropdown menu section-->
+<div id="profiledropdown" name="profiledropdown">
+
+  
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Log Out</a>
+  </div>
+  
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+  
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+  </div>
+
           <br />    
         <ol>
           <li>
