@@ -296,17 +296,38 @@ function timeUpdate() {
       <p id="queuesubtitle">current queue:</p>
       <div id="queuelistbox-dj">
       <ol id="queuelist">
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
-        <li><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía</span><br/>Kali Uchis</span></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_1</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_2</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_3</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_4</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_5</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_6</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_7</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
+        <li class = "song_in_queue"><img src="album-cover.jpg" id="qalbumcover"><span id="qsonginfo"><span class="songtitle">telepatía_8</span><br/>Kali Uchis</span>
+          <button class = "uparrow">&#8892;</button><br><button class = "downarrow">&#8891;</button></li>
     </div>
     </div>
   </div>
+  <!--script for moving songs in queue by arrow-->
+  <script>
+    $('.uparrow').on('click', function () {
+        var hook = $(this).closest('.song_in_queue').prev('.song_in_queue');
+        var elementToMove = $(this).closest('.song_in_queue').detach();
+        hook.before(elementToMove);
+    });
+    $('.downarrow').on('click', function () {
+        var hook = $(this).closest('.song_in_queue').next('.song_in_queue');
+        var elementToMove = $(this).closest('.song_in_queue').detach();
+        hook.after(elementToMove);
+    });
+  </script>
 
 </body>
 

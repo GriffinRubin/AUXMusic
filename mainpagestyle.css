@@ -356,6 +356,33 @@ div#seekObj1 {
   color: var(--lighttext);
 }
 
+.uparrow{
+  color: #a7a7a7;
+  float: right;
+  font-size: 35px;
+  margin-top: -5px;
+  margin-right: 50px;
+  background-color: Transparent;
+  border: none;
+}
+.downarrow{
+  color: #a7a7a7;
+  float: right;
+  font-size: 35px;
+  margin-top: -60px;
+  margin-right: 50px;
+  background-color: Transparent;
+  border: none;
+}
+
+.song_in_queue:first-child .uparrow{
+  display: none;
+}
+
+.song_in_queue:last-child .downarrow{
+  display: none;
+}
+
 #queuelist {
   list-style-type: none;
 }
