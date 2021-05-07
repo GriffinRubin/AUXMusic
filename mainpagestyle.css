@@ -541,6 +541,9 @@ li::before {
   font-size: 24px;
   text-transform: uppercase;
   color: var(--lighttext);
+  letter-spacing: 1px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-top: -7px;
   margin-left: -6px;
 }
@@ -549,7 +552,7 @@ li::before {
   background-color: var(--dark);
   padding: 16px;
   font-size: 16px;
-  width: 185px;
+  width: auto;
   height: 70px;
   border-radius: 80px;
   border: none;
