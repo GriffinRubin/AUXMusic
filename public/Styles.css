@@ -1,0 +1,53 @@
+/* CSS HEX
+--black-chocolate: #131200ff;
+--mantis: #78bc61ff;
+--dark-khaki: #c0c781ff;
+--camel: #c59b76ff;
+--salmon: #e9806eff;
+*/
+
+body{
+    background-color: #050525;
+}
+
+#deviceSection{
+    display: none;
+    color: #c59b76ff;
+}
+
+.container{
+    padding: 20px;
+    background-color: #C0C0C0;
+}
+
+#albumImage{
+    width: 300px;
+    float: left;
+    margin: 20px;
+}
+
+#trackTitle{
+    font-size:3em;
+    color: #c59b76ff;
+}
+
+#trackArtist{
+    font-size:2em;
+    color: #c59b76ff;
+}
+
+.welcomeText{
+    font-size:2em;
+    color: #c59b76ff;
+}
+
+button{
+   size: 20px;
+}
+
+.list-group-item {
+    z-index: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
